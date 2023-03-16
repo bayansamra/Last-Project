@@ -42,7 +42,7 @@ function Login() {
         { abortEarly: false }
       )
       .then(async () => {
-        const res = await axios.post(`${process.env.REACT_APP_API_URL}/users/login`, {
+        const res = await axios.post(`${process.env.REACT_APP_SHOMAN_URL}/users/login`, {
           email: email,
           password: password,
         });

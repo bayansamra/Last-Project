@@ -58,7 +58,7 @@ const Signup = () => {
         { abortEarly: false }
       )
       .then(async () => {
-        const res = await axios.post(`${process.env.REACT_APP_API_URL}/users/signup`, {
+        const res = await axios.post(`${process.env.REACT_APP_SHOMAN_URL}/users/signup`, {
           name: firstname,
           email: email,
           password: password,
