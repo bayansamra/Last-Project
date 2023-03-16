@@ -1,10 +1,10 @@
 import React, { createContext, useContext } from "react";
-import authorUse from './../hook/authorUse';
+import AuthorUse from "./../hook/AuthorUse";
 
 
 export const ContextAuthor = createContext(null);
 const ContextAuthorProvid = ({ children }) => {
-  const auth = authorUse();
+  const auth = AuthorUse();
   return <ContextAuthor.Provider value={auth}>{children}</ContextAuthor.Provider>;
 };
 
